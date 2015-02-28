@@ -1,0 +1,103 @@
+/*
+Theme Name: Child Theme for prism
+Theme URI: http://redentity.com/
+Description: child theme to create Redentity site
+Version: 1.0
+Author: Valerie Sundman
+Author URI: http://valeriesundman.com
+Tags: branding, business, theme
+Template: prism
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain: prism-child
+ */
+
+/*this is a child theme of prism*/
+
+
+/*THIS FILE WILL LOAD INSTEAD OF PRISM'S STYLE.CSS*/
+.home-featured, 
+#featured-posts-container, 
+#reviewslider, 
+.contact-detail-wrap{
+	padding-left: 0;
+	margin-left: 20px;
+}
+.social-wrapper{
+	background-color: #EC6C20;
+}
+.home-featured-title-area,
+.client-feedback-area,
+.home-contact-area{
+		background-color: #E53B51
+}
+.site-title a{
+	color:#E53B51;
+	font-size: 80px;
+	font-weight: normal;
+}
+
+p.site-description{
+	font-size: 25px;
+	text-align: center;
+}
+.grid_4_of_12{
+	width: 100%;
+	text-align: center;
+}
+.menu, .home-menu{
+	width: 100%;
+	float: none;
+	text-align: center;
+
+}
+.grid_8_of_12{
+	width: 100%;
+}
+.grid_8_of_12 ul#menu-main-menu {
+    width:100%;
+    height:50px;
+    text-align:center;
+}
+.grid_8_of_12 #menu-main-menu li {
+		 display:inline-block;
+        margin-right:20px;
+        float: none;
+}
+.grid_8_of_12 #menu-main-menu li a:hover {
+		 border-bottom: 1px solid #E53B51;
+		padding-bottom: 0;
+		color: #E53B51;
+}
+.flex-control-nav{
+	bottom: 15px;
+}
+
+.home-featured img,
+#reviewslider .slides img{
+	border: 3px solid #3CB5B5;
+	padding: 2px;
+}
+.home-featured .read-more{
+	background-color: #3CB5B5;
+}
+.home-featured h3{
+	font-size: 22px;
+}
+
+
+
+@media only screen and (min-width: 900px){
+	.home-featured p{
+		height: 150px;
+	}
+}
+
+
+
+#footercontainer{
+	background-color: #EC6C20;
+}
+.footer-wrap{
+	background-color: transparent;
+}
