@@ -20,6 +20,16 @@ body{
 	background-color: #fff;
 	background-image: none;
 }
+.entry-header .entry-title, .entry-header .entry-title a{
+	color: #E53B51;
+	text-align: center;
+}
+.single-portfolio .header-meta,
+.post-type-archive-portfolio .header-meta{
+	display: none;
+}
+
+
 .home-featured-area{
 	background-color: #E53B51;
 }
@@ -131,10 +141,6 @@ p.site-description{
 	color: #000;
 }
 
-
-
-
-
 .home-featured img,
 #reviewslider .slides img{
 	border: none;
@@ -146,6 +152,47 @@ p.site-description{
 .home-featured h3{
 	font-size: 22px;
 }
+
+/*PORTFOLIO STYLES*/
+.post-type-archive-portfolio .main-content {
+	text-align: center;
+	margin: 0 auto;
+}
+.post-type-archive-portfolio article{
+	width: 300px;
+	height: 350px;
+	border: 1px solid #3CB5B5;
+	float: left;
+	overflow: hidden;
+	text-align: center;
+}
+.post-type-archive-portfolio article h2 a{
+	color: #E53B51;
+}
+.post-type-archive-portfolio article img{
+	width: 100%;
+}
+.single-portfolio .entry-content img{
+	width: 100%;
+	height: auto;
+	max-width: 500px;
+	float: left;
+	padding-right: 20px;
+}
+.single-portfolio .entry-content h1{
+	text-align: center;
+	color: #E53B51;
+}
+section.filter{
+	width: 100%;
+	display: block;
+}
+.filter ul li{
+	display: inline;
+	margin: 5px 20px;
+}
+
+
 
 @media only screen and (max-width: 980px){
 			.main-navigation ul a{
