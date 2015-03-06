@@ -16,21 +16,66 @@ Template: prism
 
 
 /*THIS FILE WILL LOAD INSTEAD OF PRISM'S STYLE.CSS*/
-.home-featured, 
-#featured-posts-container, 
-#reviewslider, 
-.contact-detail-wrap{
-	padding-left: 0;
-	margin-left: 20px;
+body{
+	background-color: #fff;
+	background-image: none;
+}
+.home-featured-area{
+	background-color: #E53B51;
+}
+.home-featured-area p{
+	color: #fff;
+}
+.home-featured h3{
+	color: #fff;
+}
+.home-featured-title h3{
+	color: #fff;
+	text-shadow: 1px 2px 5px #222;
+
+}
+.slider-wrapper{
+	display: none;
 }
 .social-wrapper{
 	background-color: #EC6C20;
 }
 .home-featured-title-area,
-.client-feedback-area,
-.home-contact-area{
+.home-cta-area{
 		background-color: #E53B51
 }
+.client-feedback-area{
+	background-color: #FCD920;
+}
+.client-feedback-area h3{
+	color: #fff;	
+	text-shadow: 1px 2px 5px #222;
+	}
+.testimonial-slider{
+	background-color: #FCD920;
+}
+.home-contact-area{
+	background-color: #3CB5B5;
+}
+.contact-detail-area{
+	background-color: #3CB5B5;
+	color: #fff;
+}
+.contact-detail-area h3{
+	color: #fff;
+}
+.home-cta-area{
+	display: none;
+}
+.home-contact-title h3{
+	text-shadow: 1px 2px 5px #222;	
+}
+.contact-details #address:before,
+.contact-details #email:before,
+.contact-details #phone:before{
+	color: #fff;
+}
+
 .site-title a{
 	color:#E53B51;
 	font-size: 80px;
@@ -57,7 +102,7 @@ p.site-description{
 .grid_8_of_12 ul#menu-main-menu {
     width:100%;
     height:50px;
-    text-align:center;
+    text-align: center;
 }
 .grid_8_of_12 #menu-main-menu li {
 		 display:inline-block;
@@ -72,25 +117,65 @@ p.site-description{
 .flex-control-nav{
 	bottom: 15px;
 }
+.slicknav_btn, .slicknav_nav{
+	background-color: #3CB5B5;
+}
+.slicknav_menu a{
+	padding: 30px;
+}
+.slicknav_menu .slicknav_menutxt{
+	float: none;
+}
+
+.main-navigation .current-menu-item > a, .main-navigation .current-menu-ancestor > a, .main-navigation .current_page_item > a, .main-navigation .current_page_ancestor > a{
+	color: #000;
+}
+
+
+
+
 
 .home-featured img,
 #reviewslider .slides img{
-	border: 3px solid #3CB5B5;
-	padding: 2px;
+	border: none;
 }
 .home-featured .read-more{
-	background-color: #3CB5B5;
+	background-color: transparent;
+	color: #fff;
 }
 .home-featured h3{
 	font-size: 22px;
 }
 
-
+@media only screen and (max-width: 980px){
+			.main-navigation ul a{
+		padding: 20px;
+		font-size: 24px;
+	}
+	.main-navigation ul a:hover{
+		background-color: #75D0D0;
+	}
+}
 
 @media only screen and (min-width: 900px){
 	.home-featured p{
 		height: 150px;
 	}
+
+}
+@media only screen and (max-width: 650px){
+	.header-title{
+		display: block;
+		
+	}
+	.site-title a{
+		font-size: 60px;
+	}
+	p.site-description{
+		font-size: 20px;
+	}
+
+
 }
 
 

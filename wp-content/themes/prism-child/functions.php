@@ -10,14 +10,6 @@ function theme_enqueue_styles() {
         array('parent-style') );
  
 }
-/**
- * Hamburger Menu
- */
-wp_register_script( 'hamburgermenu', get_template_directory_uri().'/js/hamburgermenu.js', array('jquery'), '', true );
-
-wp_enqueue_script( 'hamburgermenu' );
-
-
 
 /**
  *  Activate Menu Areas
@@ -30,8 +22,6 @@ function vs_menu_areas(){
 		) );
 }
 add_action('init', 'vs_menu_areas' );
-
-
 
 
 
