@@ -13,7 +13,7 @@
  *
  * @package WordPress
  */
-
+if( $_SERVER['HTTP_HOST'] == 'localhost' ):
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', 'redentity');
@@ -23,6 +23,13 @@ define('DB_USER', 'group');
 
 /** MySQL database password */
 define('DB_PASSWORD', 'YXpCNTDjU5jPvbL6');
+
+else:
+define('DB_NAME', 'vsundman_redentity');
+define('DB_USER', 'vsundman_red');
+define('DB_PASSWORD', 'K{^p[1P}(0{.');
+endif;
+
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
