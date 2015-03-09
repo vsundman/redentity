@@ -20,6 +20,22 @@ body{
 	background-color: #fff;
 	background-image: none;
 }
+button:hover, 
+input:hover[type="button"], 
+input:hover[type="reset"], 
+input:hover[type="submit"], 
+.button:hover, 
+.entry-content .button:hover{
+	background-color: #3CB5B5;
+}
+li.current-menu-item a{
+	border-bottom: 1px solid #E53B51;
+	padding-bottom: 0;
+}
+.main-navigation li.current-menu-item a{
+	color: #E53B51;
+}
+
 .entry-header .entry-title, .entry-header .entry-title a{
 	color: #E53B51;
 	text-align: center;
@@ -154,11 +170,13 @@ p.site-description{
 }
 
 /*PORTFOLIO STYLES*/
-.post-type-archive-portfolio .main-content {
+.post-type-archive-portfolio .main-content,
+.tax-typework .main-content{
 	text-align: center;
 	margin: 0 auto;
 }
-.post-type-archive-portfolio article{
+.post-type-archive-portfolio article,
+.tax-typework article{
 	width: 300px;
 	height: 350px;
 	border: 1px solid #3CB5B5;
@@ -166,16 +184,25 @@ p.site-description{
 	overflow: hidden;
 	text-align: center;
 }
-.post-type-archive-portfolio article h2 a{
+.post-type-archive-portfolio article h2 a,
+.tax-typework article h2 a{
 	color: #E53B51;
 }
-.post-type-archive-portfolio article img{
+.post-type-archive-portfolio article img,
+.tax-typework article img{
 	width: 100%;
+}
+.filter a:hover{
+	text-decoration: underline;
+}
+ .filter li.current-cat a{
+	text-decoration: underline;
+	font-weight: bold;
 }
 .single-portfolio .entry-content img{
 	width: 100%;
 	height: auto;
-	max-width: 500px;
+	max-width: 600px;
 	float: left;
 	padding-right: 20px;
 }
@@ -191,7 +218,19 @@ section.filter{
 	display: inline;
 	margin: 5px 20px;
 }
-
+/*CLIENTS PAGE*/
+.page div.thirds__inner{
+	width: 33%;
+	float: left;
+	margin-top: 30px;
+	padding: 10px;
+}
+.page .entry-title{
+	display: none;
+}
+.page .entry-content h1{
+	color: #E53B51;
+}
 
 
 @media only screen and (max-width: 980px){

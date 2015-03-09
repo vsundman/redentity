@@ -20,6 +20,7 @@ function vs_menu_areas(){
 	register_nav_menus( array( 
 		'main_menu' => 'Main Menu at the top of every page',
 		'social_media' => 'Social Media Bar',
+
 		) );
 }
 add_action('init', 'vs_menu_areas' );
@@ -34,6 +35,7 @@ add_action('init','vs_portfolio_pieces' );
 			'public' 		=> true,
 			'menu_icon' 	=> 'dashicons-format-gallery',
 			'has_archive'	=> true,
+			'hierarchical'  => 'true',
 			'menu_position' => 5,
 			'supports'		=> array( 'title', 'editor', 'thumbnail', 
 									  'excerpt', 'revisions' ),
@@ -63,8 +65,25 @@ add_action('init','vs_portfolio_pieces' );
 		) );
 }//end function vs_portfolio_pieces
 
+// Adds current-menu-item to Custom Post Type 
+add_filter('nav_menu_css_class', 'add_class_to_wp_nav_menu');
+function add_class_to_wp_nav_menu($classes)
+{
+     switch (get_post_type())
+     {
+     	case 'portfolio': 
 
+     		// add the current page class to a specific menu item (replace ###).
+     		if (in_array('menu-item-19', $classes))
+     		{
+     		   $classes[] = 'current-menu-item';
+               }
+     		break;
 
+      // add more cases if necessary and/or a default
+     }
+	return $classes;
+}
 
 
 //no close PHP
